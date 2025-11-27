@@ -135,11 +135,28 @@ hr {
   align-items: flex-end;
   gap: 0;
 }
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+    padding: 2rem 0;
+  }
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .intro {
+    width: 100%;
+  }
+}
     </style>
 </head>
 <body>
-  <img src="image.png" height="180px" width="180px"/>
 <div class="container">
+  <img src="assets/image.png" height="180px" width="180px"/>
   <div style="display: flex; flex-direction: column;" class="intro">
     <a href="/" class="code side-margin" style="color: black; margin-bottom: 0px;font-weight: 700; margin-top: 7.5px; font-size: 21px">akhil rasheed</a>
     <div class="side-margin code" style="font-size: 21px; margin-bottom: 0px; line-height:1.3; ">
@@ -156,10 +173,10 @@ hr {
         <a style="color:grey" href="/assets/public-key.asc">C239</a>
         <a style="color:grey" href="/assets/public-key.asc">FE3A</a>
       </div>
-      <p style="margin:0">uid              Akhil Rasheed  &lt;<a style="color:grey">akhilrasheed16 [at] gmail.com</a>&gt;</p>
+      <p style="margin:0">uid              akhil rasheed  &lt;<a style="color:grey">akhilrasheed16 [at] gmail.com</a>&gt;</p>
     </div>
     <div class="front-text side-margin" style="display: flex; margin-bottom: 24px; align-items: center; font-size: 18px;">
-      <a class="link" style="margin-right: 0.75rem;" href="https://github.com/akhil-rasheed">github</a>
+      <a class="link" style="margin-right: 0.75rem;" href="https://github.com/akhilrasheed">github</a>
       <a class="link" style="margin-right: 0.75rem;" rel="me" href="https://mastodon.social/@akhil">mastodon</a>
       <a class="link" style="margin-right: 0.75rem;" href="/feed.xml">rss</a>
     </div>
