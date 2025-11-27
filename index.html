@@ -7,38 +7,73 @@
   <meta name="description" content="Personal blog of Akhil Rasheed." />
   <title>Akhil Rasheed</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
+    }
+  </script>
 </head>
 
 <body>
-  <div class="flex flex-col items-center justify-center min-h-screen py-10">
+  <button onclick="toggleDarkMode()"
+    class="fixed top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-neutral-800 text-gray-800 dark:text-gray-200 z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+    </svg>
+  </button>
+  <div
+    class="flex flex-col items-center justify-center min-h-screen py-10 bg-white dark:bg-neutral-900 text-black dark:text-neutral-200 transition-colors duration-300">
     <div class="flex flex-col md:flex-row items-center md:items-end gap-0 text-center md:text-left">
-      <img src="assets/image.png" class="h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] mb-4 md:mb-0" />
+      <img src="assets/image.png"
+        class="block dark:hidden h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] mb-4 md:mb-0" />
+      <img src="assets/image-dark.png"
+        class="hidden dark:block h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] mb-4 md:mb-0" />
       <div class="flex flex-col intro">
         <a href="/"
-          class="font-mono text-black font-bold text-[18px] sm:text-[21px] md:ml-6 mt-[7.5px] mb-0 underline">akhil
+          class="font-mono text-black dark:text-white font-bold text-[18px] sm:text-[21px] md:ml-6 mt-[7.5px] mb-0 underline">akhil
           rasheed</a>
 
-        <div class="font-mono text-[16px] md:ml-6 leading-[1.3] text-neutral-700">
+        <div class="font-mono text-[16px] md:ml-6 leading-[1.3] text-neutral-700 dark:text-neutral-400">
           <p class="m-0">pub rsa4096 2025-11-27 [SC]</p>
           <div class="flex flex-wrap justify-center md:justify-start gap-x-3 underline">
-            <a class="text-neutral-500" href="/assets/public-key.asc">F5FB</a>
-            <a class="text-neutral-500" href="/assets/public-key.asc">261F</a>
-            <a class="text-neutral-500" href="/assets/public-key.asc">2AAA</a>
-            <a class="text-neutral-500" href="/assets/public-key.asc">076D</a>
-            <a class="text-neutral-500" href="/assets/public-key.asc">A361</a>
-            <a class="text-neutral-500" href="/assets/public-key.asc">CA0D</a>
-            <a class="text-neutral-500" href="/assets/public-key.asc">AF76</a>
-            <a class="text-neutral-500" href="/assets/public-key.asc">3A54</a>
-            <a class="text-neutral-500" href="/assets/public-key.asc">C239</a>
-            <a class="text-neutral-500" href="/assets/public-key.asc">FE3A</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">F5FB</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">261F</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">2AAA</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">076D</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">A361</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">CA0D</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">AF76</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">3A54</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">C239</a>
+            <a class="text-neutral-500 dark:text-neutral-500" href="/assets/public-key.asc">FE3A</a>
           </div>
           <p class="m-0">uid akhil rasheed &lt;akhilrasheed16 [at] gmail.com&gt;</p>
         </div>
 
         <div class="flex md:ml-6 text-[16px] mt-2 items-center justify-center md:justify-start underline">
-          <a class="text-black mr-3" href="https://github.com/akhilrasheed">github</a>
-          <a class="text-black mr-3" href="https://mastodon.social/@akhil" rel="me">mastodon</a>
-          <a class="text-black mr-3" href="/feed.xml">rss</a>
+          <a class="text-black dark:text-white mr-3" href="https://github.com/akhilrasheed">github</a>
+          <a class="text-black dark:text-white mr-3" href="https://mastodon.social/@akhil" rel="me">mastodon</a>
+          <a class="text-black dark:text-white mr-3" href="/feed.xml">rss</a>
         </div>
       </div>
     </div>
@@ -46,14 +81,16 @@
       Hi, I'm Akhil, I currently live in <span class="font-bold"> Mysuru, India</span><br>
       These are the things I'm currently interested in, in no particular order: <br>
       <ul class="list">
-        <span class="text-blue-600 hover:underline hover:cursor-pointer">self-hosting</span>,
-        <span class="text-purple-600 hover:underline hover:cursor-pointer">language learning</span>,
-        <span class="text-red-600 hover:underline hover:cursor-pointer">photography</span>,
-        <span class="text-green-600 hover:underline hover:cursor-pointer">cinema</span>,
-        <span class="text-yellow-600 hover:underline hover:cursor-pointer">football</span>,
-        <span class="text-orange-600 hover:underline hover:cursor-pointer">armchair philosophy</span>,
-        <span class="text-pink-600 hover:underline hover:cursor-pointer">open source</span>,
-        <span class="text-teal-600 hover:underline hover:cursor-pointer">digital minimalism</span>
+        <span class="text-blue-600 dark:text-blue-400 hover:underline hover:cursor-pointer">self-hosting</span>,
+        <span class="text-purple-600 dark:text-purple-400 hover:underline hover:cursor-pointer">language
+          learning</span>,
+        <span class="text-red-600 dark:text-red-400 hover:underline hover:cursor-pointer">photography</span>,
+        <span class="text-green-600 dark:text-green-400 hover:underline hover:cursor-pointer">cinema</span>,
+        <span class="text-yellow-600 dark:text-yellow-400 hover:underline hover:cursor-pointer">football</span>,
+        <span class="text-orange-600 dark:text-orange-400 hover:underline hover:cursor-pointer">armchair
+          philosophy</span>,
+        <span class="text-pink-600 dark:text-pink-400 hover:underline hover:cursor-pointer">open source</span>,
+        <span class="text-teal-600 dark:text-teal-400 hover:underline hover:cursor-pointer">digital minimalism</span>
       </ul>
     </div>
   </div>
