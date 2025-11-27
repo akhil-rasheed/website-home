@@ -1,186 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Personal blog of Akhil Rasheed.">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Akhil Rasheed</title>
-    <style>
-.front-text {
-  font-family: "Noto Sans", sans-serif;
-  color: black;
-}
-.code {
-  font-family: "Noto Sans Mono", monospace;
-  color: gray;
-}
-code {
-  font-family: "Noto Sans Mono", monospace;
-  font-size: 18px;
-}
-.date {
-  font-size: 24px;
-}
-@media (max-width: 700px) {
-  .side-margin {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-  .side-margin-x2 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-}
-@media (min-width: 700px) {
-  .side-margin {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-}
-.intro h2 {
-    font-size: 21px;
-    margin-bottom: 0;
-}
-.link {
-  color: black;
-}
-.link:active {
-  color: white;
-  background: blue;
-  text-decoration: none;
-}
-.article-m {
-  font-family: "Noto Sans Mono", monospace;
-  font-size: 30px;
-  text-decoration: none;
-  opacity: 0.6;
-  color: black;
-  font-weight: 700;
-  padding: 0px;
-  margin-top: 4.2rem;
-}
-.article-m:hover {
-  opacity: 1;
-  color: blue;
-}
-.article-m:active {
-  color: white;
-  background: blue;
-  text-decoration: none;
-}
-pre {
-  overflow-x: scroll;
-  font-size: 21px;
-}
-body {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  font-family: sans;
-  font-size: 1.35rem;
-  font-weight: 400;
-  line-height: 1.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-.content img {
-  max-width: 100%
-}
-.content h1 {
-  font-family: sans;
-  font-weight: 700;
-  font-size: 24px;
-  margin-bottom: 0px;
-  line-height: 1.5;
-  display: flex;
-}
-hr {
-  border: solid 1px black;
-  width: 20%;
-  color: #ffff00;
-}
-.content h2 {
-  font-family: sans;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
-.content h3 {
-  font-family: sans;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
-.content h4 {
-  font-family: sans;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
-.content p {
-  margin-bottom: 6px;
-  margin-top: 6px;
-}
-.content li {
-  margin-top: 6px;
-  margin-bottom: 6px
-}
-.container {
-  display: flex;
-  align-items: flex-end;
-  gap: 0;
-}
-
-@media (max-width: 768px) {
-  body {
-    overflow-y: auto;
-    padding: 2rem 0;
-  }
-  
-  .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .intro {
-    width: 100%;
-  }
-}
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal blog of Akhil Rasheed." />
+  <title>Akhil Rasheed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<div class="container">
-  <img src="assets/image.png" height="180px" width="180px"/>
-  <div style="display: flex; flex-direction: column;" class="intro">
-    <a href="/" class="code side-margin" style="color: black; margin-bottom: 0px;font-weight: 700; margin-top: 7.5px; font-size: 21px">akhil rasheed</a>
-    <div class="side-margin code" style="font-size: 21px; margin-bottom: 0px; line-height:1.3; ">
-      <p style="margin:0">pub   rsa4096 2025-11-27 [SC]</p>
-      <div style="display: flex; gap: 12px;">
-        <a rel="pgpkey" style="color:grey" href="/assets/public-key.asc">F5FB</a>
-        <a style="color:grey" href="/assets/public-key.asc">261F</a>
-        <a style="color:grey" href="/assets/public-key.asc">2AAA</a>
-        <a style="color:grey" href="/assets/public-key.asc">076D</a>
-        <a style="color:grey" href="/assets/public-key.asc">A361</a>
-        <a style="color:grey" href="/assets/public-key.asc">CA0D</a>
-        <a style="color:grey" href="/assets/public-key.asc">AF76</a>
-        <a style="color:grey" href="/assets/public-key.asc">3A54</a>
-        <a style="color:grey" href="/assets/public-key.asc">C239</a>
-        <a style="color:grey" href="/assets/public-key.asc">FE3A</a>
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <div class="flex items-end gap-0">
+      <img src="assets/image.png" class="h-[180px] w-[180px]" />
+      <div class="flex flex-col intro">
+        <a href="/" class="font-mono text-black font-bold text-[21px] ml-6 mt-[7.5px] mb-0 underline">akhil rasheed</a>
+
+        <div class="font-mono text-[21px] ml-6 leading-[1.3] text-neutral-500">
+          <p class="m-0">pub rsa4096 2025-11-27 [SC]</p>
+          <div class="flex gap-3 underline">
+            <a class="text-neutral-500" href="/assets/public-key.asc">F5FB</a>
+            <a class="text-neutral-500" href="/assets/public-key.asc">261F</a>
+            <a class="text-neutral-500" href="/assets/public-key.asc">2AAA</a>
+            <a class="text-neutral-500" href="/assets/public-key.asc">076D</a>
+            <a class="text-neutral-500" href="/assets/public-key.asc">A361</a>
+            <a class="text-neutral-500" href="/assets/public-key.asc">CA0D</a>
+            <a class="text-neutral-500" href="/assets/public-key.asc">AF76</a>
+            <a class="text-neutral-500" href="/assets/public-key.asc">3A54</a>
+            <a class="text-neutral-500" href="/assets/public-key.asc">C239</a>
+            <a class="text-neutral-500" href="/assets/public-key.asc">FE3A</a>
+          </div>
+          <p class="m-0">uid akhil rasheed &lt;akhilrasheed16 [at] gmail.com&gt;</p>
+        </div>
+
+        <div class="flex ml-6 text-[18px] mt-2 items-center underline">
+          <a class="text-black mr-3" href="https://github.com/akhilrasheed">github</a>
+          <a class="text-black mr-3" href="https://mastodon.social/@akhil" rel="me">mastodon</a>
+          <a class="text-black mr-3" href="/feed.xml">rss</a>
+        </div>
       </div>
-      <p style="margin:0">uid              akhil rasheed  &lt;<a style="color:grey">akhilrasheed16 [at] gmail.com</a>&gt;</p>
-    </div>
-    <div class="front-text side-margin" style="display: flex; margin-bottom: 24px; align-items: center; font-size: 18px;">
-      <a class="link" style="margin-right: 0.75rem;" href="https://github.com/akhil-rasheed">github</a>
-      <a class="link" style="margin-right: 0.75rem;" rel="me" href="https://mastodon.social/@akhil">mastodon</a>
-      <a class="link" style="margin-right: 0.75rem;" href="/feed.xml">rss</a>
     </div>
   </div>
-</div>
 </body>
 </html>
+
