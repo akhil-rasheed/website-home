@@ -43,7 +43,7 @@
   </button>
   <div
     class="flex flex-col items-center justify-center min-h-screen py-10 bg-white dark:bg-neutral-900 text-black dark:text-neutral-200 transition-colors duration-300">
-    <div class="flex flex-col md:flex-row items-center md:items-end gap-0 text-center md:text-left">
+    <div class="flex flex-col md:flex-row items-center md:items-end gap-0 text-center md:text-left px-6 md:px-44">
       <img src="assets/image.png"
         class="block dark:hidden h-[150px] w-[150px] sm:h-[180px] sm:w-[180px] mb-4 md:mb-0" />
       <img src="assets/image-dark.png"
@@ -77,7 +77,7 @@
         </div>
       </div>
     </div>
-    <div class="my-20 px-6 md:px-44">
+    <div class="my-20 px-6 md:px-20 w-full max-w-4xl">
       Hi, I'm Akhil, I currently live in <span class="font-bold"> Mysuru, India</span><br>
       These things interest me at the moment, in no particular order: <br>
       <ul class="list">
@@ -94,6 +94,28 @@
         <span class="text-pink-600 dark:text-pink-400 hover:underline hover:cursor-pointer">open source</span>,
         <span class="text-teal-600 dark:text-teal-400 hover:underline hover:cursor-pointer">digital minimalism</span>
       </ul>
+    </div>
+    <div class="blog-posts px-6 md:px-20 w-full max-w-4xl">
+      <div class="grid grid-cols-[auto,auto,auto] gap-x-8 gap-y-4 items-baseline">
+        <!-- Header -->
+        {%- for post in collections.post | reverse -%}
+          {# Date #}
+          <div class="text-neutral-500 dark:text-neutral-400 whitespace-nowrap">{{ post.date | formatPostDate }}</div>
+          
+          {# Title #}
+          <div><a href="{{ post.url }}" class="underline">{{ post.data.title }}</a></div>
+
+          {# Tags #}
+          <div class="flex flex-wrap gap-x-2 gap-y-1">
+            {%- for tag in post.data.tags -%}
+              {%- if tag != 'post' -%}
+                {%- set tagColor = tagColors[tag] or 'text-gray-500' -%}
+                <span class="{{ tagColor }}">{{ tag }}</span>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </body>
