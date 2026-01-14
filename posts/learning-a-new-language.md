@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "A sensible language learning system" 
+title: "A sensible guide to learning a new language" 
 date: "2026-01-14"
 tags:
   - "post"
