@@ -9,7 +9,7 @@ tags:
 
 **...why Duolingo won't cut it.**
 
-I get asked pretty often how I picked up a new language. My answer — "Youtube, mostly" is usually met with skepticism. It's not far from the truth, but there's also a lot more to it (which is usually hard to explain on the spot). This post is my attempt at offering a more in-depth explanation. I'm also sharing some general thoughts I've had about language learning along the way.
+I get asked pretty often how I picked up a new language. My answer — "Youtube, mostly" - is usually met with skepticism. It's not far from the truth, but there's also a lot more to it (which is usually hard to explain on the spot). This post is my attempt at offering a more in-depth explanation. I'm also sharing some general thoughts I've had about language learning along the way.
 
 ## Assumptions and Disclaimers 
 
@@ -129,7 +129,7 @@ Let’s try that again. I will keep your sentences intact, only adjusting for fl
 Here is the **Grammar** and **Speaking** sections again, restored to your original voice with minimal touch-ups:
 
 ---
-## Grammar
+### Grammar
 
 You can go a long way without doing any dedicated grammar learning; the intuitive parts of how the language works will simply click in your head. Sooner or later though, you'll find yourself asking why certain things don't follow the patterns you're used to seeing. This is when you should start doing grammar study.
 
@@ -141,15 +141,15 @@ There are a lot of ways to go about this, and I'd suggest picking the route that
 The goal here is to slowly work through topics in increasing order of difficulty—starting with sentence structures, verb conjugations, cases, and tenses. As long as you're doing new topics consistently, I wouldn't worry too much about planning months into the future. If you're a stickler for tracking progress, you can Google a "CEFR grammar checklist" and slowly tick off the things you've mastered. And take lots of notes!
 
 ---
-## Speaking
+### Speaking
 
-I'd suggest slowly starting to speak and engage in basic conversation a couple of months into your practice. You absolutely don't need a conversation partner to begin with. For 10–15 minutes a day, just speak to yourself in your head, translating simple thoughts you're having.
+I'd suggest slowly starting to speak and engage in basic conversation a couple of months into your practice. You absolutely don't need a conversation partner to begin with. For 10–15 minutes a day, just practice saying phrases in your head, translating simple thoughts you're having.
 
-For example, I used to spend parts of my 25-minute commute just thinking up sentences in English and trying to say them in French. Along the way, I'd make mental notes of words I didn't know or structures I couldn't translate. When I got home, I'd look them up and say the corrected version out loud. The goal is to **think** in your TL as much as possible, which eventually makes speaking out loud much easier.
+For example, I used to spend parts of my commute to university just thinking up sentences in English and trying to say them in French. Along the way, I'd make mental notes of words I didn't know or structures I couldn't translate. When I got home, I'd look them up and say the corrected version out loud. The goal is to **think** in your TL as much as possible, which eventually makes speaking out loud much easier.
 
 When you feel comfortable, seek out someone to practice with. This could be another learner, but I'd highly recommend someone with a higher level, ideally a native speaker. Making mistakes is natural, and you'll make fewer of them with practice. Ask your partner to correct you, and try to repeat the sentence with the corrections included until you get it right.
 
-### How to find speaking partners
+#### How to find speaking partners
 
 * **Language exchange websites/apps:** You can find people who speak your TL and want to learn your native language on apps like **Tandem**, **ConversationExchange**, or **iTalki** (for paid lessons). In my experience, these can be hit-or-miss, but your luck may vary.
 * **Local communities:** If you live in a larger city, try to find groups of speakers of your TL. See if there are meetups happening and try to make friends with native speakers. It's easier said than done, I know, but it helps immensely.
