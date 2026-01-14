@@ -1,19 +1,19 @@
 ---
 layout: post.njk
-title: "How to go about (seriously) learning a new language" 
-date: "2026-01-12"
+title: "A sensible language learning system" 
+date: "2026-01-14"
 tags:
   - "post"
   - "language learning"
 ---
 
-...and why duolingo won't cut it.
+**...why Duolingo won't cut it.**
 
-Over the past few years, a fair few people have asked me how I picked up a new language. Sometimes I respond with 'Youtube', which is met with disbelief, despite being very close to the truth. There is, however, a method to the madness, and this post is an attempt at explaining just that. I'm also writing down some general thoughts I've had about language learning.
+I get asked pretty often how I picked up a new language. My answer — "Youtube, mostly" is usually met with skepticism. It's not far from the truth, but there's also a lot more to it (which is usually hard to explain on the spot). This post is my attempt at offering a more in-depth explanation. I'm also sharing some general thoughts I've had about language learning along the way.
 
-## Assumptions and Disclaimers
+## Assumptions and Disclaimers 
 
-This post assumes you're learning a language in order to speak and understand it. For example, you're moving to a new country and want to make your life there easier. This post isn't aimed at learners who intend to approach language learning with academic rigor. I prioritize making mistakes and getting your hands dirty using the language over being 100% grammatically accurate all the time. I'm also going to assume that the language you're learning is fairly popular, and you can access media and content in that language pretty easily. This covers most European languages, Arabic, Japanese, Hindi, etc.
+I'm going to assume you're learning your Target Language in order to speak and understand it in day to day life. For example, you're moving to a new country and want to make your life there easier. This post isn't aimed at learners who intend to approach language learning with academic rigor. I prioritize making mistakes and getting your hands dirty using the language over being 100% grammatically accurate all the time. I'm also going to assume that the language you're learning is fairly popular, and you can access media and content in that language pretty easily. This covers most European languages, Arabic, Japanese, Hindi, etc.
 
 **Acronyms Used:**  
 TL - Target Language, i.e. the language you're trying to learn  
@@ -25,6 +25,8 @@ You want to begin by getting a taste of the language you're trying to learn. Thi
 
 I'd recommend the following ways to get started. You can do a combination of these and see what works best for you. You shouldn't be spending more than a week or two in this phase.
 
+**Note:** If your TL uses a different script (like Arabic, Japanese, or Cyrillic), learn to read it first. You should be able to sound out words, even if slowly at first, before moving forward.
+
 ### Duolingo
 
 Chances are, you've probably downloaded the app already, simply because it's so popular. For most people, Duolingo is almost synonymous with learning a new language. Personally, I don't believe you can learn a language _solely_ by using the app, and even if it were possible, there are far more efficient methods of doing real learning. I like to think of Duolingo as a game about learning languages. It's great to kill 10 minutes on a bus every now and then, and is admittedly better than using that time to scroll through social media, but this really shouldn't be your bread and butter. I've seen people with very impressive daily streaks on this app (1000+ days practiced) who can't seem to string two sentences together in their target language. Don't be this person.
@@ -35,6 +37,7 @@ One thing I do like about Duolingo is that it's pretty good for picking up the s
 
 Another great way to get up and running with a language is this set of free courses from [Language Transfer](https://www.languagetransfer.org/). You can either get the free app or watch the courses on Youtube. You'll be following along with a teacher, speaking words and sentences out loud, and not writing anything down. It's low-effort and high-reward if you do it right. Make sure you follow all the instructions, and always respond to his prompts out loud (maybe consider doing the lessons behind a closed door to avoid weird looks from those around you). This is a million times more beneficial than Duolingo, and I highly recommend it if they have a course in your target language.
 
+---
 ## Phase 2: The Real Work
 
 Once you're done with this _honeymoon phase_ with your TL, you know more or less how to say very basic things, and you've encountered all the sounds that the language has to offer. Now we get to the _real deal_. This is what you should be spending most of your time doing, every single day.
@@ -52,7 +55,7 @@ If there's one thing you take away from this unnecessarily lengthy post, it shou
 
 #### Why is Immersion so Important
 
-This is literally how babies pick up languages. I doubt you've ever seen a toddler buried in a 1000 page grammar book, but somehow they can all speak reasonably fluently by the time they're 5 or 6 years old. How? Because our brains are wired to pick up language patterns simply by listening to people around them speaking. Of course, this ability peaks in toddlers and babies (since their brains are more neuroplastic), but we can still harness this ability as adults. In a sense, you're forcing your brain to adapt and form new connections through constant exposure to your TL.
+This is literally how babies pick up languages. I doubt you've ever seen a toddler buried in a grammar textbook, but somehow they can all speak reasonably fluently by the time they're 5 or 6 years old. How? Because our brains are wired to pick up language patterns simply by listening to people around them speaking. Of course, this ability peaks in toddlers and babies (since their brains are more neuroplastic), but we can still harness this ability as adults. In a sense, you're forcing your brain to adapt and form new connections through constant exposure to your TL.
 
 The easiest way to get started is to go on Youtube and search for the term 'Comprehensible Input in Spanish' (insert your TL here). You'll find hundreds or thousands of videos (depending on how popular your TL is). Find one that says 'Beginner' or 'A1'. The content of these videos might not be super interesting (a lot of them are probably children's stories) and it might seem like you're being talked to like a child, but this is super important. A toddler might not seem very smart, but we're trying to acquire the language ability of a (well spoken) toddler right now. Keep chugging on. You'll soon find that you'll be able to digest more complex subjects as your comprehension improves. You should aim at getting around an hour of immersion every single day. This sounds like a lot, but the best kind of immersion shouldn't feel like work at all.
 
@@ -75,16 +78,13 @@ The easiest way to make immersion part of your day is to replace something that 
     
 - Change your phone's language and region settings to the TL. Apps and websites will start showing you content in your TL. (This might get unhelpful and annoying soon, so change it back if you feel it's getting in your way a lot.)
     
-
+---
 ### Vocabulary (Anki)
 
 You will encounter a lot of new words while immersing yourself in the TL, but this shouldn't be your main method of acquiring vocabulary. We will use something called Anki to make our vocab acquisition more structured and predictable.
 
-Anki is basically flashcards on steroids. If you've ever used physical cards to memorize concepts or terms, this works in a very similar manner. The concept of SRS (Spaced Repetition System) involves repeatedly showing you flashcards at different intervals, and then adjusting the intervals based on how well you remember a particular card. If you remember a card fairly easily, the algorithm will show it to you again after a longer time interval.
+Anki is basically flashcards on steroids. If you've ever used physical cards to memorize concepts or terms, this works in a very similar manner. The concept of SRS (Spaced Repetition System) involves repeatedly showing you flashcards at different intervals, and then adjusting the intervals based on how well you remember a particular card. If you remember a card fairly easily, the algorithm will show it to you again after a longer time interval. Recalling a word/phrase repeatedly in this manner helps you cement it in your memory, so it's absolutely vital you do flashcard practice regularly.
 
-#### Why Anki and SRS work
-
-~Insert short blurb on why seeing things repeatedly makes them stick, use day to day convincing example~
 
 #### Setting up Anki
 
@@ -128,7 +128,7 @@ Let’s try that again. I will keep your sentences intact, only adjusting for fl
 
 Here is the **Grammar** and **Speaking** sections again, restored to your original voice with minimal touch-ups:
 
-
+---
 ## Grammar
 
 You can go a long way without doing any dedicated grammar learning; the intuitive parts of how the language works will simply click in your head. Sooner or later though, you'll find yourself asking why certain things don't follow the patterns you're used to seeing. This is when you should start doing grammar study.
@@ -140,6 +140,7 @@ There are a lot of ways to go about this, and I'd suggest picking the route that
 
 The goal here is to slowly work through topics in increasing order of difficulty—starting with sentence structures, verb conjugations, cases, and tenses. As long as you're doing new topics consistently, I wouldn't worry too much about planning months into the future. If you're a stickler for tracking progress, you can Google a "CEFR grammar checklist" and slowly tick off the things you've mastered. And take lots of notes!
 
+---
 ## Speaking
 
 I'd suggest slowly starting to speak and engage in basic conversation a couple of months into your practice. You absolutely don't need a conversation partner to begin with. For 10–15 minutes a day, just speak to yourself in your head, translating simple thoughts you're having.
@@ -154,3 +155,9 @@ When you feel comfortable, seek out someone to practice with. This could be anot
 * **Local communities:** If you live in a larger city, try to find groups of speakers of your TL. See if there are meetups happening and try to make friends with native speakers. It's easier said than done, I know, but it helps immensely.
 * **The "Customer Service" strategy:** One unorthodox way I used to practice—I got a "virtual phone number" from France for very cheap and I'd call up local businesses to enquire about their services. I’d call a restaurant to ask if they had a table for ten, or a museum to ask about events. This works so well because the person on the other side has no idea you're a learner; they treat you like a native speaker and only respond in the TL! Just be sure not to waste their time—keep it under two minutes and don't actually book an appointment or anything that will make the life of the person on the other end harder.
 
+---
+## Closing thoughts
+
+Congrats on making it to the end! This should be enough to take you from complete beginner to intermediate level in your TL.
+
+I didn't really want to write a conclusion, but ending abruptly felt wrong. When I started writing this, I just wanted to explain my language learning method. Looking back now, it reads more like an opinionated guide than I intended. Still, I hope there are bits and pieces here that help you on your own journey. All the best!
