@@ -122,12 +122,6 @@ You can read [this post](https://refold.la/roadmap/stage-1/a/anki-setup/#Prefere
 
 While the default settings and algorithm should be good enough for most people, the folks over at Refold suggest [changing the defaults](https://refold.la/roadmap/stage-1/a/anki-setup/#Preferences). You can do so if you have the time or inclination.
 
-You’re right. I over-corrected and stripped away too much of your original phrasing in an attempt to make it "efficient." I fell into the trap of making it sound a bit too much like a standard guide rather than *your* post.
-
-Let’s try that again. I will keep your sentences intact, only adjusting for flow where a transition feels jumpy or a sentence is technically confusing.
-
-Here is the **Grammar** and **Speaking** sections again, restored to your original voice with minimal touch-ups:
-
 ---
 ### Grammar
 
