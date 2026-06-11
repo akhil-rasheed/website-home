@@ -1,0 +1,48 @@
+---
+layout: base.njk
+---
+
+<div class="px-6 md:px-44 w-full max-w-6xl">
+  <a href="/" class="text-neutral-500 dark:text-neutral-400 underline mb-8 block">&larr; Back to Home</a>
+  
+  <h1 class="text-4xl font-bold mb-2">{{ title }}</h1>
+  <p class="text-neutral-500 dark:text-neutral-400 mb-12">{{ page.date | formatPostDate }}</p>
+  
+  <div id="gallery" class="flex flex-col gap-16">
+    {% for item in photos %}
+      {% if item.src %}
+        <div class="photo-item">
+          <a href="{{ site.cdnBase }}/{{ item.src }}" 
+             data-pswp-width="{{ item.w }}" 
+             data-pswp-height="{{ item.h }}" 
+             target="_blank">
+            <img src="{{ site.cdnBase }}/{{ item.src }}?width=1200&quality=80" 
+                 alt="{{ item.caption }}" 
+                 class="w-full h-auto block"
+                 loading="lazy">
+          </a>
+          {% if item.caption %}
+            <p class="text-[12px] text-neutral-500 dark:text-neutral-500 mt-2 font-mono uppercase tracking-wider">
+              {{ item.caption }}
+            </p>
+          {% endif %}
+        </div>
+      {% elif item.prose %}
+        <div class="prose-block max-w-2xl text-neutral-700 dark:text-neutral-300 font-mono text-lg leading-relaxed">
+          {{ item.prose | safe }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/photoswipe.min.css" >
+<script type="module">
+import PhotoSwipeLightbox from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/photoswipe-lightbox.esm.min.js';
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery',
+  children: 'a',
+  pswpModule: () => import('https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/photoswipe.esm.min.js')
+});
+lightbox.init();
+</script>
