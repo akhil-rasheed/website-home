@@ -9,3 +9,6 @@ _site/
 
 # Vite
 .vite/
+
+# Local Photos
+assets/photos/
