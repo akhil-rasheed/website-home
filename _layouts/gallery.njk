@@ -14,13 +14,13 @@ layout: base.njk
         <div class="photo-item">
           {% set lightboxWidth = 1600 %}
           {% set lightboxHeight = (item.h * lightboxWidth / item.w) | round %}
-          {% set previewWidth = 800 %}
+          {% set previewWidth = 600 %}
           {% set previewHeight = (item.h * previewWidth / item.w) | round %}
-          <a href="{{ site.cdnBase }}/{{ item.src }}?width={{ lightboxWidth }}&quality=75&format=auto" 
+          <a href="{{ site.cdnBase }}/cdn-cgi/image/width={{ lightboxWidth }},quality=85,format=auto/{{ item.src }}" 
              data-pswp-width="{{ lightboxWidth }}" 
              data-pswp-height="{{ lightboxHeight }}" 
              target="_blank">
-            <img src="{{ site.cdnBase }}/{{ item.src }}?width={{ previewWidth }}&quality=60&format=auto" 
+            <img src="{{ site.cdnBase }}/cdn-cgi/image/width={{ previewWidth }},format=auto/{{ item.src }}" 
                  alt="{{ item.caption }}" 
                  width="{{ previewWidth }}"
                  height="{{ previewHeight }}"
