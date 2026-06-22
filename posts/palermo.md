@@ -17,6 +17,10 @@ photos:
     w: 4160
     h: 6240
     caption: ""
+  - src: palermo/DSC_baby.JPG
+    w: 5219
+    h: 4152
+    caption: ""
   - src: palermo/_DSF8230.JPG
     w: 6240
     h: 4160
