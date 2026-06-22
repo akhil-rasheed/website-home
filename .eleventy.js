@@ -1,8 +1,9 @@
 const { format } = require('date-fns');
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // Copy the `assets` directory to the output
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
   // Date formatting filter
   eleventyConfig.addFilter("formatPostDate", (dateObj) => {
