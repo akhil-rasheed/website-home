@@ -58,14 +58,15 @@ layout: base.njk
               {% if post.data.cover %}
                 {# Layout for posts WITH cover image #}
                 {# Row 1: Title #}
-                  <div class="mb-4"> <a href="{{ post.url }}" class="underline">{{ post.data.title }}</a>
+                  <div class="mb-4"> <a href="{{ post.url }}" class="underline text-md">{{ post.data.title }}</a>
                 </div>
                 {# Row 2: Photo and Metadata #}
                 <div
                   class="grid grid-cols-[1fr,auto] gap-x-8 items-start">
                   {# Left Column: Cover Image #}
                   <div>
-                    <img src="{{ site.cdnBase }}/cdn-cgi/image/width=800,quality=75,format=auto/{{ post.data.cover }}" alt="" width="400" height="267" class="w-[400px] aspect-[3/2] object-cover rounded-[4px] mb-2" loading="lazy" decoding="async">
+                    <a href="{{ post.url }}">
+                      <img src="{{ site.cdnBase }}/cdn-cgi/image/width=800,quality=75,format=auto/{{ post.data.cover }}" alt="" width="400" height="267" class="w-[400px] aspect-[3/2] object-cover rounded-[4px] mb-2" loading="lazy" decoding="async"></a>
                       <div class="text-[12px] text-neutral-500 dark:text-neutral-400 flex items-center gap-1.5 font-mono uppercase tracking-wider">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
