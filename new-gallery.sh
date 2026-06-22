@@ -3,6 +3,11 @@
 # Usage: ./new-gallery.sh <source_directory> <r2_prefix>
 # Example: R2_BUCKET=my-bucket ./new-gallery.sh ~/photos/freiburg-winter freiburg-winter
 
+# Load environment variables from .env if it exists
+if [ -f .env ]; then
+  export $(grep -v '^#' .env | xargs)
+fi
+
 SOURCE_DIR=$1
 R2_PREFIX=$2
 BUCKET=${R2_BUCKET}
@@ -36,6 +41,13 @@ done
 
 # Upload to R2
 echo "" >&2
+echo "--- Debug Info ---" >&2
+echo "Bucket: $BUCKET" >&2
+echo "Prefix: $R2_PREFIX" >&2
+echo "Source: $SOURCE_DIR" >&2
+echo "------------------" >&2
+echo "" >&2
+
 echo "--- Uploading to R2: $BUCKET/$R2_PREFIX ---" >&2
-rclone copy "$SOURCE_DIR" "r2:$BUCKET/$R2_PREFIX" --progress >&2
+rclone copy "$SOURCE_DIR" "r2:$BUCKET/$R2_PREFIX" --progress -vv >&2
 echo "--- Upload Complete ---" >&2
