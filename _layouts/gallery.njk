@@ -12,14 +12,25 @@ layout: base.njk
     {% for item in photos %}
       {% if item.src %}
         <div class="photo-item">
-          <a href="{{ site.cdnBase }}/{{ item.src }}" 
-             data-pswp-width="{{ item.w }}" 
-             data-pswp-height="{{ item.h }}" 
+          {% set lightboxWidth = 1600 %}
+          {% set lightboxHeight = (item.h * lightboxWidth / item.w) | round %}
+          {% set previewWidth = 800 %}
+          {% set previewHeight = (item.h * previewWidth / item.w) | round %}
+          <a href="{{ site.cdnBase }}/{{ item.src }}?width={{ lightboxWidth }}&quality=75&format=auto" 
+             data-pswp-width="{{ lightboxWidth }}" 
+             data-pswp-height="{{ lightboxHeight }}" 
              target="_blank">
-            <img src="{{ site.cdnBase }}/{{ item.src }}?width=1200&quality=80" 
+            <img src="{{ site.cdnBase }}/{{ item.src }}?width={{ previewWidth }}&quality=60&format=auto" 
                  alt="{{ item.caption }}" 
+                 width="{{ previewWidth }}"
+                 height="{{ previewHeight }}"
                  class="w-full h-auto block"
-                 loading="lazy">
+                 {% if loop.first %}
+                   fetchpriority="high"
+                 {% else %}
+                   loading="lazy"
+                   decoding="async"
+                 {% endif %}>
           </a>
           {% if item.caption %}
             <p class="text-[12px] text-neutral-500 dark:text-neutral-500 mt-2 font-mono uppercase tracking-wider">
