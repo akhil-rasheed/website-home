@@ -4,56 +4,39 @@ layout: base.njk
 
 <div class="px-6 md:px-44 w-full max-w-6xl">
   <a href="/" class="text-neutral-500 dark:text-neutral-400 underline mb-8 block">&larr; Back to Home</a>
-  
   <h1 class="text-4xl font-bold mb-2">{{ title }}</h1>
   <p class="text-neutral-500 dark:text-neutral-400 mb-12">{{ page.date | formatPostDate }}</p>
-  
   <div id="gallery" class="flex flex-col gap-16">
     {% for item in photos %}
       {% if item.src %}
         <div class="photo-item">
           {% set lightboxWidth = 1600 %}
           {% set lightboxHeight = (item.h * lightboxWidth / item.w) | round %}
-          {% set previewWidth = 600 %}
+          {% set previewWidth = 1000 %}
           {% set previewHeight = (item.h * previewWidth / item.w) | round %}
-          <a href="{{ site.cdnBase }}/cdn-cgi/image/width={{ lightboxWidth }},quality=85,format=auto/{{ item.src }}" 
-             data-pswp-width="{{ lightboxWidth }}" 
-             data-pswp-height="{{ lightboxHeight }}" 
-             target="_blank">
-            <img src="{{ site.cdnBase }}/cdn-cgi/image/width={{ previewWidth }},format=auto/{{ item.src }}" 
-                 alt="{{ item.caption }}" 
-                 width="{{ previewWidth }}"
-                 height="{{ previewHeight }}"
-                 class="w-full h-auto block"
-                 {% if loop.first %}
-                   fetchpriority="high"
-                 {% else %}
-                   loading="lazy"
-                   decoding="async"
-                 {% endif %}>
-          </a>
-          {% if item.caption %}
-            <p class="text-[12px] text-neutral-500 dark:text-neutral-500 mt-2 font-mono uppercase tracking-wider">
-              {{ item.caption }}
-            </p>
-          {% endif %}
-        </div>
-      {% elif item.prose %}
-        <div class="prose-block max-w-2xl text-neutral-700 dark:text-neutral-300 font-mono text-lg leading-relaxed">
-          {{ item.prose | safe }}
-        </div>
-      {% endif %}
-    {% endfor %}
+          <a href="{{ site.cdnBase }}/cdn-cgi/image/width={{ lightboxWidth }},quality=85,format=auto/{{ item.src }}" data-pswp-width="{{ lightboxWidth }}" data-pswp-height="{{ lightboxHeight }}" target="_blank">
+            <img src="{{ site.cdnBase }}/cdn-cgi/image/width={{ previewWidth }},format=auto/{{ item.src }}" alt="{{ item.caption }}" width="{{ previewWidth }}" height="{{ previewHeight }}" class="w-full h-auto block" {% if loop.first %} fetchpriority="high" {% else %} loading="lazy" decoding="async" {% endif %}></a>
+            {% if item.caption %}
+              <p class="text-[12px] text-neutral-500 dark:text-neutral-500 mt-2 font-mono uppercase tracking-wider">
+                {{ item.caption }}
+              </p>
+            {% endif %}
+          </div>
+        {% elif item.prose %}
+          <div class="prose-block max-w-2xl text-neutral-700 dark:text-neutral-300 font-mono text-lg leading-relaxed">
+            {{ item.prose | safe }}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
-</div>
-
-<link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.css" >
-<script type="module">
-import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '#gallery',
-  children: 'a',
-  pswpModule: () => import('https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.esm.js')
-});
-lightbox.init();
-</script>
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.css">
+    <script type="module">
+      import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js';
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+        pswpModule: () => import ('https://unpkg.com/photoswipe@5.4.3/dist/photoswipe.esm.js')
+      });
+      lightbox.init();
+    </script>

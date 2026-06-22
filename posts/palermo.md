@@ -3,16 +3,8 @@ title: "Palermo"
 date: 2026-06-22
 layout: gallery
 tags: [photography]
-cover: palermo/DSC_baby.jpg
+cover: palermo/_DSF8230.JPG
 photos:
-  - src: palermo/DSC_baby.jpg
-    w: 5219
-    h: 4152
-    caption: ""
-  - src: palermo/wiCO0.jpeg
-    w: 4160
-    h: 6240
-    caption: ""
   - src: palermo/_DSF8164.JPG
     w: 6240
     h: 4160
