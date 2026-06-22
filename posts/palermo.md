@@ -57,6 +57,10 @@ photos:
     w: 4160
     h: 6240
     caption: ""
+  - src: palermo/_DSF8327.JPG
+    w: 4160
+    h: 6240
+    caption: ""
   - src: palermo/_DSF8336.JPG
     w: 4160
     h: 6240
