@@ -30,8 +30,8 @@ shopt -s nullglob
 for img in "$SOURCE_DIR"/*.{jpg,jpeg,JPG,JPEG}; do
   filename=$(basename "$img")
   
-  # Get dimensions using identify: width height
-  read -r width height <<< $(identify -format "%w %h" "$img")
+  # Get dimensions using identify: width height (accounting for EXIF orientation)
+  read -r width height <<< $(identify -auto-orient -format "%w %h" "$img")
   
   echo "  - src: $R2_PREFIX/$filename"
   echo "    w: $width"
