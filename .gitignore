@@ -12,3 +12,4 @@ _site/
 
 # Local Photos
 assets/photos/
+.env
